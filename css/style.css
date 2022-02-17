@@ -11,7 +11,7 @@
     --font-size-title: 2.2rem;
     --font-size-subtitle: 1.6rem;
     --font-size-widget: 1.2rem;
-    --font-size-nav: 1.2rem;
+    --font-size-nav: 1.08rem;
     --font-bol: 700;
     --font-med: 500;
     --font-reg: 400;
@@ -67,16 +67,16 @@ a:hover{
 
 main > *:first-child:not(.main-banner){
     margin-top: 220px;
+    min-height: calc(100vh - 220px);
 }
 
-.container{
+main .container{
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    padding: 20px;
+    margin: 120px auto;
+    padding: 0px 28px;
 }
-.full-container{
+main .full-container{
     width: 100%;
     margin-bottom: 60px;
 }
@@ -96,7 +96,7 @@ main > *:first-child:not(.main-banner){
     font-family: var(--font-title);
     font-size: 2.2rem;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin-bottom:28px;
 }
 
 /* --- SIZE ICON --- */
@@ -152,11 +152,6 @@ main > *:first-child:not(.main-banner){
     aspect-ratio: 1;
     display: flex;
 }
-/* .widget-icon img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-} */
 
 /* --- HEADER ---*/
 
@@ -174,7 +169,7 @@ header{
 
 .header-top{
     background-color: var(--color-flash-blue);
-    height: 120px;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,15 +193,6 @@ header{
     font-weight: var(--font-bol);
     font-size: var(--font-size-h1);
 }
-/* .header-logo{
-    width: 60px;
-    aspect-ratio: 1;
-}
-.header-logo img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-} */
 .header-burger-icon{
     display: none;
     width: 28px;
@@ -270,7 +256,7 @@ header{
 }
 .header-nav ul li a{
     display: block;
-    padding: 18px 15px;
+    padding: 16px 15px;
     color: var(--color-dark-blue);
     text-decoration: none;
 }
@@ -411,9 +397,6 @@ header{
     width: 100%;
 }
 .main-home .actu-club-items-img{
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
     transition: 0.8s ease-out;
 }
 .main-home .actu-club-items::after{
@@ -495,11 +478,6 @@ header{
     border-radius: 2px;
     overflow: hidden;
 }
-/* .main-home .actu-foot-article-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 .main-home .actu-foot-article-info{
     height: 70px;
     display: flex;
@@ -625,7 +603,6 @@ footer a{
     .header-top{
         justify-content: space-between;
         padding: 28px;
-        height: 110px;
     }
     .header-link{
         flex-direction: row;
@@ -722,7 +699,7 @@ footer a{
     /* --- BASE PROPERTY --- */
 
     main > *:first-child:not(.main-banner){
-        margin-top: 120px;
+        margin-top: 160px;
     }
     .sec-title{
         font-size: calc(1.2rem + 2vmin);
