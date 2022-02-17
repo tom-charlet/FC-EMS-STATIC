@@ -11,7 +11,7 @@
     --font-size-title: 2.2rem;
     --font-size-subtitle: 1.6rem;
     --font-size-widget: 1.2rem;
-    --font-size-nav: 1.08rem;
+    --font-size-nav: 1rem;
     --font-bol: 700;
     --font-med: 500;
     --font-reg: 400;
@@ -80,6 +80,18 @@ main .full-container{
     width: 100%;
     margin-bottom: 60px;
 }
+.no-scroll-bar::-webkit-scrollbar{
+    width: 0 !important;
+    height: 0 !important;
+    display: none;
+    background: transparent;
+}
+.no-scroll-bar{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+}
+
 .bloc-icon{
     display: flex;
     justify-content: flex-start;
@@ -256,7 +268,7 @@ header{
 }
 .header-nav ul li a{
     display: block;
-    padding: 16px 15px;
+    padding: 18px 15px;
     color: var(--color-dark-blue);
     text-decoration: none;
 }
@@ -284,7 +296,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 .dropdown-link a{
     color: var(--color-dark-blue);
@@ -316,7 +328,7 @@ header{
     font-size: .9em;
 }
 .dropdown-menu ul li a{
-    padding: 18px 22px;
+    padding: 16px 20px;
     display: block;
     width: 100%;
 }
@@ -445,9 +457,6 @@ header{
     background-color: var(--color-light-grey);
     border-radius: 4px 4px 0 0;
 }
-.main-home .actu-foot-article-container::-webkit-scrollbar {
-    width: 0px;
-}
 .main-home .actu-foot-article-container{
     padding: 15px;
     width: 100%;
@@ -522,6 +531,11 @@ header{
     font-size: .7rem;
 }
 
+/* --- MAIN RESULTATS --- */
+
+.main-resultat .tet{
+    overflow-x: scroll;
+}
 /* --- FOOTER --- */
 
 footer{
@@ -650,6 +664,7 @@ footer a{
         padding: 60px 28px;
         transition: all 0.2s ease-in-out;
     }
+
     .header-nav > ul{
         position: relative;
         flex-direction: column;
@@ -675,13 +690,10 @@ footer a{
     .dropdown-menu:hover ul{
         position: inherit;
         box-shadow: none;
-        padding: 10px 0;
+        padding-bottom: 10px;
     }
     .dropdown-menu ul li{
         padding: 0;
-    }
-    .dropdown-menu ul li a{
-        padding: 15px 20px;
     }
     .dropdown-menu ul:hover li{
         background-color: inherit;
