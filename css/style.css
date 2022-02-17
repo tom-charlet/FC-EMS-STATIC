@@ -68,6 +68,7 @@ a:hover{
 main > *:first-child:not(.main-banner){
     margin-top: 220px;
 }
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -125,6 +126,8 @@ main > *:first-child:not(.main-banner){
     height: 34px;
 }
 
+/* --- IMAGE PROPERTY --- */
+
 .img-cover{
     width: 100%;
     height: 100%;
@@ -135,6 +138,8 @@ main > *:first-child:not(.main-banner){
     height: 100%;
     object-fit: contain;
 }
+
+/* --- FONT SIZE --- */
 
 .widget-title{
     font-size: 1.2rem;
@@ -147,11 +152,11 @@ main > *:first-child:not(.main-banner){
     aspect-ratio: 1;
     display: flex;
 }
-.widget-icon img{
+/* .widget-icon img{
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
+} */
 
 /* --- HEADER ---*/
 
@@ -193,7 +198,7 @@ header{
     font-weight: var(--font-bol);
     font-size: var(--font-size-h1);
 }
-.header-logo{
+/* .header-logo{
     width: 60px;
     aspect-ratio: 1;
 }
@@ -201,7 +206,7 @@ header{
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
+} */
 .header-burger-icon{
     display: none;
     width: 28px;
@@ -347,7 +352,7 @@ header{
 
 /* --- MAIN BANNER --- */
 
-.main-banner{
+/* .main-banner{
     margin-top: 179px;
     height: calc(100vh - 179px);
     position: relative;
@@ -369,13 +374,7 @@ header{
     height: 100%;
     background-color: rgba(36, 53, 77, 0.3);
     background: linear-gradient(0deg, rgba(23,33,48,0.6) 2%, rgba(23,33,48,0.4) 74%, rgba(23,33,48,0.6) 100%);
-
-}
-.main-banner .banner-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+} */
 
 /* --- ACTU --- */
 
@@ -412,9 +411,9 @@ header{
     width: 100%;
 }
 .main-home .actu-club-items-img{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
     transition: 0.8s ease-out;
 }
 .main-home .actu-club-items::after{
@@ -496,11 +495,11 @@ header{
     border-radius: 2px;
     overflow: hidden;
 }
-.main-home .actu-foot-article-img img{
+/* .main-home .actu-foot-article-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 .main-home .actu-foot-article-info{
     height: 70px;
     display: flex;
