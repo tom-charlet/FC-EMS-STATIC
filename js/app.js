@@ -8,10 +8,22 @@ window.addEventListener("load", () => {
         menuNavHeader.classList.toggle('is-active');
     });
 
-    // const dropBtn = document.querySelector('.dropdown-menu');
-    // const dropdown = document.querySelector('.dropdown-menu ul');
+    const dropdown = document.querySelector(".dropdown");
+    const btnDrop = document.querySelector(".btn-drop");
 
-    // dropBtn.addEventListener('click', () => {
-    //     dropdown.classList.toggle('is-active');
-    // });
+    let toggleIndex = 0;
+
+    btnDrop.addEventListener('click', () => {
+
+        // console.log(dropdown.scrollHeight);
+
+        if (toggleIndex === 0) {
+            dropdown.style.height = `${dropdown.scrollHeight}px`;
+            toggleIndex++;
+        } else {
+            dropdown.style.height = `${btnDrop.scrollHeight}px`;
+            toggleIndex--;
+        }
+
+    })
 });
