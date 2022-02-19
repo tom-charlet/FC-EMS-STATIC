@@ -8,22 +8,24 @@ window.addEventListener("load", () => {
         menuNavHeader.classList.toggle('is-active');
     });
 
-    const dropdown = document.querySelector(".dropdown");
-    const btnDrop = document.querySelector(".btn-drop");
+    // const btnDrop = document.querySelectorAll(".btn-drop");
+    // btnDrop.forEach(element => {
+    //     element.addEventListener('click', () => {
+    //         let parent = element.closest('.dropdown')
+    //         parent.classList.toggle('is-active');
+    //     })
+    // });
 
-    let toggleIndex = 0;
-
-    btnDrop.addEventListener('click', () => {
-
-        // console.log(dropdown.scrollHeight);
-
-        if (toggleIndex === 0) {
-            dropdown.style.height = `${dropdown.scrollHeight}px`;
-            toggleIndex++;
-        } else {
-            dropdown.style.height = `${btnDrop.scrollHeight}px`;
-            toggleIndex--;
-        }
-
-    })
+    const btnDrop = document.querySelectorAll(".btn-drop");
+    const dropdown = document.querySelector(".dropdown").offsetHeight;
+    btnDrop.forEach(element => {
+        element.addEventListener('click', () => {
+            let parent = element.closest('.dropdown')
+            if (parent.offsetHeight === dropdown) {
+                parent.style.height = `${parent.scrollHeight}px`;
+            } else {
+                parent.style.height = `${dropdown}px`;
+            }
+        })
+    });
 });
