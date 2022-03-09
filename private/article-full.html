@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" media="screen" href="../css/style.css">
-    <title>FC EMS - Résultats des matchs</title>
+    <title>FC EMS - Nom Actualité</title> <!-- Modifier nom article en back -->
 </head>
 
 <body>
@@ -59,7 +59,7 @@
                 <!-- RESULTATS -->
 
                 <li class="header-nav-active">
-                    <a href="#">
+                    <a href="resultats.html">
                         <div class="bloc-icon">
                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -175,164 +175,28 @@
 
     <!-- MAIN -->
 
-    <main class="main-resultat">
+    <main class="main-article-full">
         <section class="container">
-            <h2 class="sec-title title-page">Résultats des matchs</h2>
-            <div class="grid-scc">
+            <h2 class="sec-title title-page">Actualités</h2>
 
-                <!-- FILTRES SIDEBAR -->
+            <!-- ARTICLE CONTAINER -->
 
-                <div class="filter-sidebar">
-                    <div class="entete">
-                        <svg class="entete-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.8 1C6.8 0.447715 6.35228 0 5.8 0C5.24772 0 4.8 0.447715 4.8 1H6.8ZM4.8 4.2C4.8 4.75228 5.24772 5.2 5.8 5.2C6.35228 5.2 6.8 4.75228 6.8 4.2H4.8ZM13.2 1C13.2 0.447715 12.7523 0 12.2 0C11.6477 0 11.2 0.447715 11.2 1H13.2ZM11.2 4.2C11.2 4.75228 11.6477 5.2 12.2 5.2C12.7523 5.2 13.2 4.75228 13.2 4.2H11.2ZM1 6.4C0.447715 6.4 0 6.84772 0 7.4C0 7.95228 0.447715 8.4 1 8.4V6.4ZM17 8.4C17.5523 8.4 18 7.95228 18 7.4C18 6.84772 17.5523 6.4 17 6.4V8.4ZM4.2 3.6H13.8V1.6H4.2V3.6ZM13.8 3.6C15.015 3.6 16 4.58497 16 5.8H18C18 3.4804 16.1196 1.6 13.8 1.6V3.6ZM16 5.8V13.8H18V5.8H16ZM16 13.8C16 15.015 15.015 16 13.8 16V18C16.1196 18 18 16.1196 18 13.8H16ZM13.8 16H4.2V18H13.8V16ZM4.2 16C2.98497 16 2 15.015 2 13.8H0C0 16.1196 1.8804 18 4.2 18V16ZM2 13.8V5.8H0V13.8H2ZM2 5.8C2 4.58497 2.98497 3.6 4.2 3.6V1.6C1.8804 1.6 0 3.4804 0 5.8H2ZM4.8 1V4.2H6.8V1H4.8ZM11.2 1V4.2H13.2V1H11.2ZM1 8.4H17V6.4H1V8.4Z"
-                                fill="#24354D" />
-                        </svg>
-                        <span class="entete-title">Filtres</span>
-                    </div>
-
-                    <div class="group-btn">
-                        <div class="dropdown">
-                            <button class="btn-drop">
-                                <span>Groupes</span>
-                                <img src="../img/dropdown-icon.png" alt="voir plus">
-                            </button>
-                            <div class="list-drop">
-                                <ul>
-                                    <li>Senior</li>
-                                    <li>U18</li>
-                                    <li>U15</li>
-                                    <li>U13</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="dropdown">
-                            <button class="btn-drop">
-                                <span>équipes</span>
-                                <img src="../img/dropdown-icon.png" alt="voir plus">
-                            </button>
-                            <div class="list-drop">
-                                <ul>
-                                    <li>équipe a</li>
-                                    <li>équipe b</li>
-                                    <li>équipe c</li>
-                                    <li>équipe d</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
+            <article class="article-container">
+                <div class="article-full-img">
+                    <img class="img-cover" src="../img/img-test-foot.jpg" alt="Image d'article">
                 </div>
-
-                <!-- RESULTATS CONTAINER -->
-
-                <div class="res-container">
-                    <div class="entete">
-                        <svg class="entete-icon" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.8 1C6.8 0.447715 6.35228 0 5.8 0C5.24772 0 4.8 0.447715 4.8 1H6.8ZM4.8 4.2C4.8 4.75228 5.24772 5.2 5.8 5.2C6.35228 5.2 6.8 4.75228 6.8 4.2H4.8ZM13.2 1C13.2 0.447715 12.7523 0 12.2 0C11.6477 0 11.2 0.447715 11.2 1H13.2ZM11.2 4.2C11.2 4.75228 11.6477 5.2 12.2 5.2C12.7523 5.2 13.2 4.75228 13.2 4.2H11.2ZM1 6.4C0.447715 6.4 0 6.84772 0 7.4C0 7.95228 0.447715 8.4 1 8.4V6.4ZM17 8.4C17.5523 8.4 18 7.95228 18 7.4C18 6.84772 17.5523 6.4 17 6.4V8.4ZM4.2 3.6H13.8V1.6H4.2V3.6ZM13.8 3.6C15.015 3.6 16 4.58497 16 5.8H18C18 3.4804 16.1196 1.6 13.8 1.6V3.6ZM16 5.8V13.8H18V5.8H16ZM16 13.8C16 15.015 15.015 16 13.8 16V18C16.1196 18 18 16.1196 18 13.8H16ZM13.8 16H4.2V18H13.8V16ZM4.2 16C2.98497 16 2 15.015 2 13.8H0C0 16.1196 1.8804 18 4.2 18V16ZM2 13.8V5.8H0V13.8H2ZM2 5.8C2 4.58497 2.98497 3.6 4.2 3.6V1.6C1.8804 1.6 0 3.4804 0 5.8H2ZM4.8 1V4.2H6.8V1H4.8ZM11.2 1V4.2H13.2V1H11.2ZM1 8.4H17V6.4H1V8.4Z"
-                                fill="#24354D" />
-                        </svg>
-                        <span class="entete-title">Résultats des matchs</span>
+                <div class="article-content">
+                    <div class="article-entete">
+                        <h3>Résumé de l'article</h3>
+                        <p>Date article / Auteur</p>
                     </div>
-
-                    <!-- SELECTEUR MOIS -->
-
-                    <div class="carousel-selector">
-                        <button class="btn-prev">
-                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.318467 7.29292C-0.0720574 7.68345 -0.0720574 8.31661 0.318467 8.70714L6.68243 15.0711C7.07295 15.4616 7.70612 15.4616 8.09664 15.0711C8.48717 14.6806 8.48717 14.0474 8.09664 13.6569L2.43979 8.00003L8.09664 2.34318C8.48717 1.95265 8.48717 1.31949 8.09664 0.928964C7.70612 0.538439 7.07295 0.538439 6.68243 0.928964L0.318467 7.29292ZM1.02557 9.00003L1.56356 9.00003L1.56356 7.00003L1.02557 7.00003L1.02557 9.00003Z"
-                                    fill="#24354D" fill-opacity="0.5" />
-                            </svg>
-                        </button>
-                        <h3 class="carousel-info">SEPTEMBRE</h3>
-                        <button class="btn-next">
-                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.318467 7.29292C-0.0720574 7.68345 -0.0720574 8.31661 0.318467 8.70714L6.68243 15.0711C7.07295 15.4616 7.70612 15.4616 8.09664 15.0711C8.48717 14.6806 8.48717 14.0474 8.09664 13.6569L2.43979 8.00003L8.09664 2.34318C8.48717 1.95265 8.48717 1.31949 8.09664 0.928964C7.70612 0.538439 7.07295 0.538439 6.68243 0.928964L0.318467 7.29292ZM1.02557 9.00003L1.56356 9.00003L1.56356 7.00003L1.02557 7.00003L1.02557 9.00003Z"
-                                    fill="#24354D" fill-opacity="0.5" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- RESULTATS CONTENT -->
-
-                    <div class="res-content">
-
-                        <article class="res-article">
-                            <div class="res-article-score">
-                                <h3 class="team-name">TEAM 1</h3>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h4 class="res-match">3 - 2</h4>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h3 class="team-name">TEAM 2</h3>
-                            </div>
-                            <div class="res-article-info">
-                                <p>MATCHS AMICAUX - 3 DECEMBRE 2021 - 15H50 - PAUL COUDRET</p>
-                            </div>
-                        </article>
-                        <article class="res-article">
-                            <div class="res-article-score">
-                                <h3 class="team-name">TEAM 1</h3>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h4 class="res-match">3 - 2</h4>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h3 class="team-name">TEAM 2</h3>
-                            </div>
-                            <div class="res-article-info">
-                                <p>MATCHS AMICAUX - 3 DECEMBRE 2021 - 15H50 - PAUL COUDRET</p>
-                            </div>
-                        </article>
-                        <article class="res-article">
-                            <div class="res-article-score">
-                                <h3 class="team-name">TEAM 1</h3>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h4 class="res-match">3 - 2</h4>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h3 class="team-name">TEAM 2</h3>
-                            </div>
-                            <div class="res-article-info">
-                                <p>MATCHS AMICAUX - 3 DECEMBRE 2021 - 15H50 - PAUL COUDRET</p>
-                            </div>
-                        </article>
-                        <article class="res-article">
-                            <div class="res-article-score">
-                                <h3 class="team-name">TEAM 1</h3>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h4 class="res-match">3 - 2</h4>
-                                <div class="logo-team-m">
-                                    <img class="img-contain" src="../img/logo-ems.png" alt="logo de l'équipe 1">
-                                </div>
-                                <h3 class="team-name">TEAM 2</h3>
-                            </div>
-                            <div class="res-article-info">
-                                <p>MATCHS AMICAUX - 3 DECEMBRE 2021 - 15H50 - PAUL COUDRET</p>
-                            </div>
-                        </article>
-
+                    <div class="article-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In consequuntur ab perferendis necessitatibus itaque nam aut similique enim esse nobis. Illum, minima fugiat reiciendis commodi alias omnis non eum ipsum. Nemo doloremque rerum sequi officiis ullam neque eligendi earum, quia dicta officia ut molestiae possimus, voluptatum praesentium dignissimos dolores culpa expedita itaque nisi. Quos, est eligendi sunt quae assumenda esse voluptatum, cum suscipit hic ut mollitia pariatur inventore nostrum fugiat, vero ipsum temporibus. Nam dolorum, mollitia provident, culpa, id maiores quas reprehenderit nostrum earum labore ut reiciendis corrupti voluptatem sed iusto quis expedita necessitatibus in. Animi repellendus dolores illum numquam, totam excepturi similique molestiae labore iusto voluptatibus veniam laborum, est necessitatibus dolorem aliquam natus. Deserunt sapiente sit pariatur adipisci modi ipsum deleniti excepturi explicabo natus magni consectetur perspiciatis velit amet facilis vero laboriosam, obcaecati suscipit nam quisquam provident totam id eos ipsa? Quos at inventore maxime voluptas culpa minima delectus sequi optio, officia, fugiat animi reprehenderit quod. Ipsa vel, deleniti magnam aperiam placeat mollitia accusamus repellendus nam pariatur doloribus tempore ad labore eveniet commodi cumque, error inventore aut minus in! Libero quo amet illo molestiae? Quaerat tempore aliquid explicabo, voluptate nostrum obcaecati vitae porro sit minima amet magni quisquam similique.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
 
