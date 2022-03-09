@@ -1045,18 +1045,35 @@ footer a{
 
 @media screen and (max-width: 570px){
     
+    .main-home .actu-container{
+        gap: 45px;
+    }
     .main-home .actu-club-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: calc(100px + 30vmin);
+        display: grid;
+        gap: 20px;
+        grid-template-columns: inherit;
+        grid-template-rows: inherit;
+        grid-auto-flow: column;
+        grid-auto-columns: 80%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: var(20px, 1rem);
+    }
+    .main-home .actu-club-container::-webkit-scrollbar {
+        height: .6em;
+    }
+    .main-home .actu-club-container::-webkit-scrollbar-thumb {
+        background: rgba(10, 49, 78, 0.2);
+        border: solid .25em transparent;
+        border-radius: 100vw;
     }
     .main-home .actu-club-container > *{
-        display: none;
-    }
-    .main-home .actu-club-container > *:first-child{
-        display: block;
+        scroll-snap-align: start;
+        margin-bottom: 10px;
     }
     .main-home .actu-foot-article-container{
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
     }
 
     /* --- ARTICLES SLIDER --- */
