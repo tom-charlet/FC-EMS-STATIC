@@ -748,9 +748,9 @@ header{
     grid-auto-flow: column;
     grid-auto-columns: 40%;
     overflow-x: auto;
+    overflow-y: hidden;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
-    scroll-padding-inline: var(20px, 1rem);
 }
 .article-slider::-webkit-scrollbar {
     height: .6em;
@@ -944,13 +944,6 @@ footer a{
         font-size: calc(1.2rem + 2vmin);
     }
 
-    /* --- BANNER --- */
-
-    .main-banner{
-        margin-top: 110px;
-        height: calc(100vh - 110px);
-    }
-
     /* --- ACTU --- */
 
     .main-home .actu-container{
@@ -1032,7 +1025,7 @@ footer a{
         display: grid;
         gap: 20px;
         grid-template-columns: inherit;
-        grid-template-rows: inherit;
+        grid-template-rows: 260px;
         grid-auto-flow: column;
         grid-auto-columns: 80%;
         overflow-x: auto;
@@ -1049,7 +1042,7 @@ footer a{
         border-radius: 100vw;
     }
     .main-home .actu-club-article{
-        margin-bottom: 20px;
+        height: calc(100% - 10px);
     }
     .main-home .actu-club-container > *{
         scroll-snap-align: start;
