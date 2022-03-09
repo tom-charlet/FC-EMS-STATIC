@@ -236,8 +236,8 @@ main > *:first-child:not(.main-banner){
     text-transform: uppercase;
     cursor: pointer;
 }
-.list-drop li:hover{
-    color: var(--color-flash-blue);
+.list-drop li:hover, .list-drop-active{
+    background-color: var(--color-grey);
 }
 .list-drop li:first-child{
     padding-top: 20px;
@@ -594,7 +594,7 @@ header{
     flex-shrink: 0;
     width: 70px;
     aspect-ratio: 1;
-    background-color: var(--color-dark-grey);
+    background-color: var(--color-grey);
     border-radius: 2px;
     overflow: hidden;
 }
@@ -910,16 +910,12 @@ footer a{
     .dropdown-menu:hover ul{
         position: inherit;
         box-shadow: none;
-        padding-bottom: 10px;
     }
     .dropdown-menu ul li{
         padding: 0;
     }
-    .dropdown-menu ul:hover li{
-        background-color: inherit;
-    }
-    .dropdown-menu ul li:hover a{
-        color: var(--color-flash-blue);
+    .dropdown-menu ul > *:last-child{
+        padding-bottom: 5px;
     }
     .header-nav .bloc-icon svg{
         display: block;
