@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="css/style.css">
-    <title>FC EMS - Homepage</title>
+    <link rel="stylesheet" media="screen" href="../css/style.css">
+    <title>FC EMS - Nom Actualité</title> <!-- Modifier nom article en back -->
 </head>
 
 <body>
@@ -23,9 +23,9 @@
         <!-- HEADER TOP -->
 
         <div class="header-top">
-            <a href="#" class="header-link">
+            <a href="../index.html" class="header-link">
                 <div class="logo-team-m">
-                    <img class="img-contain" src="img/logo-ems.png" alt="logo fc eure madrie seine">
+                    <img class="img-contain" src="../img/logo-ems.png" alt="logo fc eure madrie seine">
                 </div>
                 <h1 class="header-title">Football Club Eure Madrie Seine</h1>
             </a>
@@ -41,8 +41,8 @@
 
                 <!-- ACCEUIL -->
 
-                <li class="header-nav-active">
-                    <a href="#">
+                <li>
+                    <a href="../index.html">
                         <div class="bloc-icon">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +58,8 @@
 
                 <!-- RESULTATS -->
 
-                <li>
-                    <a href="private/resultats.html">
+                <li class="header-nav-active">
+                    <a href="resultats.html">
                         <div class="bloc-icon">
                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
                                 </svg>
                                 <span>club</span>
                             </div>
-                            <img src="img/dropdown-icon.png" alt="menu déroulant">
+                            <img src="../img/dropdown-icon.png" alt="menu déroulant">
                         </div>
                     </a>
                     <ul>
@@ -141,7 +141,7 @@
                                 </svg>
                                 <span>galerie</span>
                             </div>
-                            <img src="img/dropdown-icon.png" alt="menu déroulant">
+                            <img src="../img/dropdown-icon.png" alt="menu déroulant">
                         </div>
                     </a>
                     <ul>
@@ -175,265 +175,58 @@
 
     <!-- MAIN -->
 
-    <main class="main-home">
-
-        <!-- MAIN BANNER -->
-
-        <!-- <section class="full-container main-banner">
-            <div class="banner-img">
-                <img class="img-cover" src="img/img-test-foot.jpg" alt="arrière plan bannière">
-            </div>
-        </section> -->
-
+    <main class="main-article-slider">
         <section class="container">
-            <h2 class="sec-title">Actualité du club</h2>
+            <h2 class="sec-title title-page">Actualités</h2>
 
-            <!-- ACTU -->
+            <!-- ARTICLE CONTAINER -->
 
-            <div class="actu-container">
-
-                <!-- ACTU-CLUB --- /!\ --- 4 ARTICLES MIN-MAX -->
-
-                <div class="actu-club-container">
-
-                    <!-- ARTICLE ACTU CLUB -->
-
-                    <article class="actu-club-article">
-                        <a class="actu-club-link" href="private/article-full.html">
-                            <div class="actu-club-items">
-                                <img class="actu-club-items-img img-cover" src="img/img-test-foot.jpg"
-                                    alt="actualité club">
-                                <h3 class="actu-club-items-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            </div>
-                        </a>
-                    </article>
-
-                    <!-- ARTICLE ACTU CLUB -->
-
-                    <article class="actu-club-article">
-                        <a class="actu-club-link" href="private/article-slider.html">
-                            <div class="actu-club-items">
-                                <img class="actu-club-items-img img-cover" src="img/img-test-foot.jpg"
-                                    alt="actualité club">
-                                <h3 class="actu-club-items-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            </div>
-                        </a>
-                    </article>
-
-                    <!-- ARTICLE ACTU CLUB -->
-
-                    <article class="actu-club-article">
-                        <a class="actu-club-link" href="#">
-                            <div class="actu-club-items">
-                                <img class="actu-club-items-img img-cover" src="img/img-test-foot.jpg"
-                                    alt="actualité club">
-                                <h3 class="actu-club-items-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            </div>
-                        </a>
-                    </article>
-
-                    <!-- ARTICLE ACTU CLUB -->
-
-                    <article class="actu-club-article">
-                        <a class="actu-club-link" href="#">
-                            <div class="actu-club-items">
-                                <img class="actu-club-items-img img-cover" src="img/img-test-foot.jpg"
-                                    alt="actualité club">
-                                <h3 class="actu-club-items-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            </div>
-                        </a>
-                    </article>
-
-                </div>
-
-                <!-- ACTU-FOOT --- /!\ --- 9 ARTICLES MIN-MAX -->
-
-                <div class="actu-foot-container">
-                    <div class="actu-foot-header">
-                        <div class="widget-icon">
-                            <img class="img-contain" src="img/actu-foot-icon.svg" alt="icone actualité foot">
-                        </div>
-                        <h3 class="widget-title">Actualité</h3>
+            <article class="article-container">
+                <div class="article-content">
+                    <div class="article-entete">
+                        <h3>Résumé de l'article</h3>
+                        <p>Date article / Auteur</p>
                     </div>
-                    <div class="actu-foot-article-container no-scroll-bar">
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                        <!-- ARTICLE ACTU FOOT -->
-
-                        <article class="actu-foot-article">
-                            <a class="actu-foot-article-link" href="#">
-                                <div class="actu-foot-article-img">
-                                    <img class="img-cover" src="img/img-test-foot.jpg" alt="actualité foot">
-                                </div>
-                                <div class="actu-foot-article-info">
-                                    <h4 class="actu-foot-article-title">Vicoire du fc EMS</h4>
-                                    <p class="actu-foot-article-desc">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                                    </p>
-                                    <p class="actu-foot-article-date">
-                                        3 janvier
-                                    </p>
-                                </div>
-                            </a>
-                        </article>
-
-                    </div>
-                    <div class="actu-foot-ctc">
-                        <a href="#">Voir plus d'actualités ></a>
+                    <div class="article-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In consequuntur ab perferendis
+                            necessitatibus itaque nam aut similique enim esse nobis. Illum, minima fugiat reiciendis
+                            commodi alias omnis non eum ipsum. Nemo doloremque rerum sequi officiis ullam neque eligendi
+                            earum, quia dicta officia ut molestiae possimus, voluptatum praesentium dignissimos dolores
+                            culpa expedita itaque nisi. Quos, est eligendi sunt quae assumenda esse voluptatum, cum
+                            suscipit hic ut mollitia pariatur inventore nostrum fugiat, vero ipsum temporibus. Nam
+                            dolorum, mollitia provident, culpa, id maiores quas reprehenderit nostrum earum labore ut
+                            reiciendis corrupti voluptatem sed iusto quis expedita necessitatibus in. Animi repellendus
+                            dolores illum numquam, totam excepturi similique molestiae labore iusto voluptatibus veniam
+                            laborum, est necessitatibus dolorem aliquam natus. Deserunt sapiente sit pariatur adipisci
+                            modi ipsum deleniti excepturi explicabo natus magni consectetur perspiciatis velit amet
+                            facilis vero laboriosam, obcaecati suscipit nam quisquam provident totam id eos ipsa? Quos
+                            at inventore maxime voluptas culpa minima delectus sequi optio, officia, fugiat animi
+                            reprehenderit quod. Ipsa vel, deleniti magnam aperiam placeat mollitia accusamus repellendus
+                            nam pariatur doloribus tempore ad labore eveniet commodi cumque, error inventore aut minus
+                            in! Libero quo amet illo molestiae? Quaerat tempore aliquid explicabo, voluptate nostrum
+                            obcaecati vitae porro sit minima amet magni quisquam similique.
+                        </p>
                     </div>
                 </div>
-            </div>
+                <div class="article-slider">
+                    <div class="article-slider-img">
+                        <img class="img-cover" src="../img/img-test-foot.jpg" alt="Image d'article">
+                    </div>
+                    <div class="article-slider-img">
+                        <img class="img-cover" src="../img/img-test-foot.jpg" alt="Image d'article">
+                    </div>
+                    <div class="article-slider-img">
+                        <img class="img-cover" src="../img/img-test-foot.jpg" alt="Image d'article">
+                    </div>
+                    <div class="article-slider-img">
+                        <img class="img-cover" src="../img/img-test-foot.jpg" alt="Image d'article">
+                    </div>
+                    <div class="article-slider-img">
+                        <img class="img-cover" src="../img/img-test-foot.jpg" alt="Image d'article">
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
@@ -443,7 +236,7 @@
         <div class="footer-container">
             <div class="footer-top">
                 <div class="logo-team-s">
-                    <img class="img-contain" src="img/logo-ems.png" alt="logo : football club eure madrie seine">
+                    <img class="img-contain" src="../img/logo-ems.png" alt="logo : football club eure madrie seine">
                 </div>
                 <h3>Football club eure madrie seine</h3>
             </div>
@@ -470,7 +263,7 @@
                     <li>
                         <a href="#">
                             <div class="icon-s">
-                                <img class="img-contain" src="img/accueil.svg" title="instagram"
+                                <img class="img-contain" src="../img/accueil.svg" title="instagram"
                                     alt="lien vers l'instagram du club">
                             </div>
                         </a>
@@ -478,7 +271,7 @@
                     <li>
                         <a href="#">
                             <div class="icon-s">
-                                <img class="img-contain" src="img/accueil.svg" title="facebook"
+                                <img class="img-contain" src="../img/accueil.svg" title="facebook"
                                     alt="lien vers le facebook du club">
                             </div>
                         </a>
@@ -486,7 +279,7 @@
                     <li>
                         <a href="#">
                             <div class="icon-s">
-                                <img class="img-contain" src="img/accueil.svg" title="email"
+                                <img class="img-contain" src="../img/accueil.svg" title="email"
                                     alt="lien vers le mail du club">
                             </div>
                         </a>
@@ -502,7 +295,7 @@
 
     <!-- JS -->
 
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

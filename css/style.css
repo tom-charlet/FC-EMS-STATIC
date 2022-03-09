@@ -74,7 +74,7 @@ main > *:first-child:not(.main-banner){
 .full-container{
     width: 100%;
     max-width: 1200px;
-    margin: 120px auto;
+    margin: 120px auto 160px;
     padding: 0px 28px;
 }
 .grid-cs, .grid-ccs, .grid-scc{
@@ -754,6 +754,37 @@ header{
     max-height: 480px;
     overflow: hidden;
     border-radius: 4px;
+}
+
+/* --- ARTICLES SLIDER --- */
+
+.main-article-slider .article-container{
+    margin-top: 60px;
+}
+
+.article-slider{
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: 40%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(20px, 1rem);
+}
+.article-slider::-webkit-scrollbar {
+    height: .6em;
+}
+.article-slider::-webkit-scrollbar-thumb {
+    background: rgba(10, 49, 78, 0.2);
+    border: solid .25em transparent;
+    border-radius: 100vw;
+}
+.article-slider-img{
+    overflow: hidden;
+    border-radius: 4px;
+    scroll-snap-align: start;
+    margin-bottom: 10px;
 }
 
 /* --- FOOTER --- */

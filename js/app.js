@@ -28,4 +28,7 @@ window.addEventListener("load", () => {
             }
         })
     });
+
+    // const vertSlider = document.querySelectorAll(".article-slider");
+    // console.log(vertSlider);
 });
