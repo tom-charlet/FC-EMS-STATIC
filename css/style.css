@@ -77,18 +77,12 @@ main > *:first-child:not(.main-banner){
     margin: 120px auto 160px;
     padding: 0px 28px;
 }
-.grid-cs, .grid-ccs, .grid-scc{
-    display: grid;
+
+.filtre-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 60px;
-}
-.grid-cs{
-    grid-template-columns: repeat(2, 1fr);
-}
-.grid-ccs{
-    grid-template-columns: 1fr auto;
-}
-.grid-scc{
-    grid-template-columns: auto 1fr;
 }
 
 /* --- NO SCROLL BAR --- */
@@ -685,12 +679,15 @@ header{
     font-weight: bold;
     font-family: var(--font-size-title);
     flex-shrink: 0;
+    word-break: break-all;
 }
 .main-resultat .res-article-score > *:first-child{
+    padding-left: 40px;
     text-align: end;
 }
 .main-resultat .res-article-score > *:last-child{
     text-align: start;
+    padding-right: 40px;
 }
 .res-article-info{
     font-size: 1rem;
@@ -945,6 +942,9 @@ footer a{
     .sec-title{
         font-size: calc(1.2rem + 2vmin);
     }
+    .carousel-selector h3{
+        font-size: 1.2rem;
+    }
 
     /* --- ACTU --- */
 
@@ -953,7 +953,7 @@ footer a{
     }
     .main-home .actu-foot-container{
         max-width: inherit;
-        height: calc(400px);
+        height: 400px;
     }
     .main-home .actu-foot-article-container{
         grid-template-columns: repeat(3, 1fr);
@@ -961,7 +961,35 @@ footer a{
     }
     .main-home .actu-foot-article{
         flex: 1 0 50%;
-    }GI
+    }
+
+    /* --- RESULTATS --- */
+
+    .main-resultat .res-container{
+        width: 100%;
+    }
+    .main-resultat .res-article-score{
+        gap: 30px;
+    }
+    .main-resultat .res-match{
+        font-size: 1.4rem;
+        font-family: var(--font-size-title);
+        padding: 10px 18px;
+        transform: translateY(-15px);
+    }
+    .main-resultat .logo-team-m{
+        flex-shrink: 0;
+        transform: translateY(-15px);
+        margin: 0;
+    }
+    .main-resultat .team-name{
+        width: 130px;
+        padding: 0 10px;
+        font-size: .9rem;
+    }
+    .res-article-info{
+        font-size: .8rem;
+    }
 
     /* --- ARTICLES FULL --- */
 
@@ -984,6 +1012,40 @@ footer a{
     }
     .main-home .actu-foot-article-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- BASE PROPERTY --- */
+
+    .filtre-wrap{
+        flex-direction: column;
+        gap: 160px;
+    }
+
+    /* --- RESULTAT --- */
+
+    .main-resultat .filter-sidebar{
+        width: 100%;
+    }
+    .main-resultat .filter-sidebar .group-btn{
+        flex-direction: row;
+        position: relative;
+        flex-direction: column;
+    }
+    .main-resultat .filter-sidebar .dropdown{
+        position: absolute;
+        top: 0;
+        max-width: inherit;
+        width: 100%;
+        min-width: 150px;
+    }
+    .main-resultat .filter-sidebar .dropdown:last-child{
+        top: 80px;
+    }
+    .main-resultat .filter-sidebar .btn-drop{
+        font-size: 1rem;
+        height: 60px;
+        width: 100%;
+        gap: 20px;
     }
 
     /* --- ARTICLES SLIDER --- */
@@ -1019,7 +1081,7 @@ footer a{
 /* |--- MOBILE SCREEN --- */
 
 @media screen and (max-width: 570px){
-    
+
     .main-home .actu-container{
         gap: 45px;
     }
@@ -1027,7 +1089,7 @@ footer a{
         display: grid;
         gap: 20px;
         grid-template-columns: inherit;
-        grid-template-rows: 260px;
+        grid-template-rows: 50vw;
         grid-auto-flow: column;
         grid-auto-columns: 80%;
         overflow-x: auto;
@@ -1051,6 +1113,27 @@ footer a{
     }
     .main-home .actu-foot-article-container{
         grid-template-columns: 1fr;
+    }
+    .main-home .actu-club-items-title{
+        font-size: 1.2rem;
+    }
+    
+    /* --- RESULTATS ---*/
+
+    .main-resultat .res-article-score{
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+    }
+    .main-resultat .team-name{
+        width: 35%;
+        padding: 0 20px!important;
+    }
+    .main-resultat .logo-team-m{
+        display: none;
+    }
+    .main-resultat .res-match{
+        font-size: 1.1rem
     }
 
     /* --- ARTICLES SLIDER --- */
