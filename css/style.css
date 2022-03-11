@@ -747,6 +747,7 @@ header{
     gap: 20px;
     grid-auto-flow: column;
     grid-auto-columns: 40%;
+    grid-template-rows: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     overscroll-behavior-inline: contain;
@@ -765,6 +766,7 @@ header{
     border-radius: 4px;
     scroll-snap-align: start;
     height: calc(100% - 10px);
+    width: 100%;
 }
 
 /* --- FOOTER --- */
