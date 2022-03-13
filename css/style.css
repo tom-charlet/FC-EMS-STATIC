@@ -279,7 +279,7 @@ main > *:last-child{
 
 .select-form{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
