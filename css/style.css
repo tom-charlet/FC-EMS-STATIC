@@ -63,8 +63,12 @@ a{
 a:hover{
     text-decoration: underline;
 }
-main > *:first-child:not(.main-banner){
+main > *:first-child{
     margin-top: 230px;
+    min-height: calc(100vh - 220px);
+}
+main > *:last-child{
+    margin-bottom: 230px;
     min-height: calc(100vh - 220px);
 }
 
@@ -74,7 +78,7 @@ main > *:first-child:not(.main-banner){
 .full-container{
     width: 100%;
     max-width: 1200px;
-    margin: 120px auto 160px;
+    margin: 120px auto 0px;
     padding: 0px 28px;
 }
 
@@ -178,7 +182,7 @@ main > *:first-child:not(.main-banner){
     font-family: var(--font-title);
     font-size: 2.2rem;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     line-height: 1.5;
 }
 .title-page{
@@ -248,7 +252,7 @@ main > *:first-child:not(.main-banner){
     justify-content: center;
     align-items: center;
     gap: 20%;
-    margin: 40px 0;
+    margin: 40px 0 0;
     padding: 10px;
     border-radius: 4px;
     background-color: var(--color-grey);
@@ -270,6 +274,64 @@ main > *:first-child:not(.main-banner){
     fill: var(--color-white);
     transition: fill 0.2s ease-in-out;
 }
+
+/* --- FORMULAIRE --- */
+
+.select-form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+.select-form .select-bloc{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.select-form label{
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin-left: 2px;
+    color: var(--color-dark-grey);
+}
+.select-form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-dark-blue);
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px 2px;
+    line-height: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--font-text);
+    padding: 16px 20px;
+    width: 180px;
+    background-image: url(../img/dropdown-icon.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 90% 50%;
+    outline: none;
+    cursor: pointer;
+}
+.select-form option{
+    font-family: var(--font-text);
+    padding: 8px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    outline: 0;
+}
+
+/* --- TABLEAUX --- */
+
+.score-table{
+    font-size: 1rem;
+    background-color: var(--color-grey);
+}
+
 
 /* --- HEADER ---*/
 
@@ -463,6 +525,8 @@ header{
     gap: 20px;
 }
 
+/* --- MAIN HOME --- */
+
 /* | --- ACTU-CLUB --- */
 
 .main-home .actu-club-container{
@@ -616,6 +680,13 @@ header{
     font-size: .7rem;
 }
 
+/* | --- RESULTATS MATCHS --- */
+
+.resultats-container{
+    display: flex;
+    gap: 60px;
+}
+
 /* --- MAIN RESULTATS --- */
 
 .main-resultat .res-container{
@@ -633,20 +704,18 @@ header{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10000; */
 }
 
-.main-resultat .res-content{
+.main-resultat .res-content,
+.main-home .res-content{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 15px;
+    padding-top: 55px;
     text-align: center;
 }
-.main-resultat .res-article-score{
+.main-resultat .res-article-score,
+.main-home .res-article-score{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -655,7 +724,8 @@ header{
     border-radius: 4px;
     margin-bottom: 15px;
 }
-.main-resultat .res-match{
+.main-resultat .res-match,
+.main-home .res-match{
     flex-shrink: 0;
     background-color: var(--color-white);
     border-radius: 4px;
@@ -666,12 +736,14 @@ header{
     padding: 12px 22px;
     transform: translateY(-15px);
 }
-.main-resultat .logo-team-m{
+.main-resultat .logo-team-m,
+.main-home .logo-team-m{
     flex-shrink: 0;
     transform: scale(1.1) translateY(-15px);
     margin: 0 10px;
 }
-.main-resultat .team-name{
+.main-resultat .team-name,
+.main-home .team-name{
     width: 130px;
     flex: 0 1 auto;
     padding: 15px 10px;
@@ -681,11 +753,13 @@ header{
     flex-shrink: 0;
     word-break: break-all;
 }
-.main-resultat .res-article-score > *:first-child{
+.main-resultat .res-article-score > *:first-child,
+.main-home .res-article-score > *:first-child{
     padding-left: 40px;
     text-align: end;
 }
-.main-resultat .res-article-score > *:last-child{
+.main-resultat .res-article-score > *:last-child,
+.main-home .res-article-score > *:last-child{
     text-align: start;
     padding-right: 40px;
 }

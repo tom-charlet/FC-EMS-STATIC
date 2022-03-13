@@ -126,24 +126,29 @@
 
     /* --- RESULTATS --- */
 
-    .main-resultat .res-container{
+    .main-resultat .res-container,
+    .main-home .res-container{
         width: 100%;
     }
-    .main-resultat .res-article-score{
+    .main-resultat .res-article-score,
+    .main-home .res-article-score{
         gap: 30px;
     }
-    .main-resultat .res-match{
+    .main-resultat .res-match,
+    .main-home .res-match{
         font-size: 1.4rem;
         font-family: var(--font-size-title);
         padding: 10px 18px;
         transform: translateY(-15px);
     }
-    .main-resultat .logo-team-m{
+    .main-resultat .logo-team-m
+    .main-home .logo-team-m{
         flex-shrink: 0;
         transform: translateY(-15px);
         margin: 0;
     }
-    .main-resultat .team-name{
+    .main-resultat .team-name,
+    .main-home .team-name{
         width: 130px;
         font-size: .9rem;
     }
@@ -280,19 +285,23 @@
     
     /* --- RESULTATS ---*/
 
-    .main-resultat .res-article-score{
+    .main-resultat .res-article-score,
+    .main-home .res-article-score{
         justify-content: space-between;
         gap: 10px;
         width: 100%;
     }
-    .main-resultat .team-name{
+    .main-resultat .team-name,
+    .main-home .team-name{
         width: 35%;
         padding: 10px 15px;
     }
-    .main-resultat .logo-team-m{
+    .main-resultat .logo-team-m,
+    .main-home .logo-team-m{
         display: none;
     }
-    .main-resultat .res-match{
+    .main-resultat .res-match,
+    .main-home .res-match{
         font-size: 1.1rem
     }
 
