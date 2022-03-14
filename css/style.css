@@ -764,8 +764,7 @@ header{
     padding: 12px 22px;
     transform: translateY(-15px);
 }
-.main-resultat .logo-team-m,
-.main-home .logo-team-m{
+.res-container .logo-team-m{
     flex-shrink: 0;
     transform: scale(1.1) translateY(-15px);
     margin: 0 10px;
