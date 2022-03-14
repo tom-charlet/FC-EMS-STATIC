@@ -337,7 +337,8 @@
         opacity: 0;
         transition: 0.2s;
     }
-    .res-container .logo-team-m:hover::after{
+    .res-container .logo-team-m:hover::after,
+    .res-container .logo-team-m:active::after{
         opacity: 1;
     }
 
