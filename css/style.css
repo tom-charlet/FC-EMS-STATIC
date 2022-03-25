@@ -162,6 +162,7 @@ main > *:last-child{
     align-items: center;
     border-bottom: solid rgba(10, 49, 78, 0.2) 2px;
     padding: 14px 0px 14px 16px;
+    margin-bottom: 40px;
 }
 .entete-content{
     display: flex;
@@ -746,16 +747,12 @@ header{
 
 /* --- MAIN RESULTATS --- */
 
-.main-resultat .res-container{
-    
-}
 .main-resultat .select-form{
     flex-direction: column;
 }
 .main-resultat .filter-sidebar{
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 /* .filter-sidebar .group-btn{
     width: 100%;
@@ -767,9 +764,12 @@ header{
 .main-home .res-content{
     display: flex;
     flex-direction: column;
+    padding-top: 25px;
     gap: 40px;
-    padding-top: 55px;
     text-align: center;
+}
+.main-resultat .res-content{
+    padding-top: 55px;
 }
 .main-resultat .res-article-score,
 .main-home .res-article-score{
