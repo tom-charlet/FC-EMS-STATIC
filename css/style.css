@@ -506,6 +506,7 @@ header{
 
 .dropdown-menu > a{
     display: flex;
+    cursor: pointer;
 }
 .dropdown-link{
     padding: 0;
@@ -519,7 +520,7 @@ header{
     text-decoration: none;
 }
 .dropdown-link img{
-    width: 10px;
+    width: 8px;
 }
 .dropdown-menu ul{
     display: none;
