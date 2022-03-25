@@ -228,7 +228,7 @@ main > *:last-child{
 
 /* --- BTN DROPDOWN ---*/
 
-.dropdown{
+/* .dropdown{
     width: 100%;
     height: 58px;
     max-width: 200px;
@@ -268,7 +268,7 @@ main > *:last-child{
 }
 .list-drop li:last-child{
     padding-bottom: 20px;
-}
+} */
 
 /* --- CAROUSEL SELECTOR ---*/
 
@@ -305,7 +305,7 @@ main > *:last-child{
 
 .select-form{
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
@@ -746,20 +746,22 @@ header{
 /* --- MAIN RESULTATS --- */
 
 .main-resultat .res-container{
-    max-width: 720px;
+    
+}
+.main-resultat .select-form{
+    flex-direction: column;
 }
 .main-resultat .filter-sidebar{
-    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.filter-sidebar .group-btn{
+/* .filter-sidebar .group-btn{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+} */
 .main-resultat .res-content,
 .main-home .res-content{
     display: flex;

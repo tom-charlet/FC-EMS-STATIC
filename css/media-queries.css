@@ -188,15 +188,24 @@
 
     .filtre-wrap{
         flex-direction: column;
-        gap: 160px;
+    }
+    .main-resultat .select-form{
+        flex-direction: row;
     }
 
     /* --- RESULTAT --- */
 
+    .main-resultat .filtre-wrap{
+        gap: 40px;
+    }
     .main-resultat .filter-sidebar{
         width: 100%;
     }
-    .main-resultat .filter-sidebar .group-btn{
+    .main-resultat .filter-sidebar .entete{
+        display: none;
+    }
+    
+    /* .main-resultat .filter-sidebar .group-btn{
         flex-direction: row;
         position: relative;
         flex-direction: column;
@@ -216,7 +225,7 @@
         height: 60px;
         width: 100%;
         gap: 20px;
-    }
+    } */
 
     /* --- ARTICLES SLIDER --- */
 
@@ -260,6 +269,11 @@
     .entete-title{
         font-size: 1.1rem;
     }
+    .carousel-selector{
+        gap: inherit;
+        justify-content: space-around;
+    }
+
     /* --- FORMULAIRE --- */
 
     .select-form select{
