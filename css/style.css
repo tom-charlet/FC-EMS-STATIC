@@ -158,14 +158,22 @@ main > *:last-child{
 
 .entete{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgba(10, 49, 78, 0.2) 2px;
+    padding: 14px 0px 14px 16px;
+}
+.entete-content{
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap : 12px;
-    border-bottom: solid rgba(10, 49, 78, 0.2) 2px;
-    padding: 18px 20px;
+    gap: 12px;
 }
 .entete-icon{
     height: 20px;
+}
+.entete-icon-filter{
+    height: 14px;
 }
 .entete-title{
     font-family: var(--font-title);
@@ -173,6 +181,24 @@ main > *:last-child{
     font-weight: var(--font-bol);
     text-transform: uppercase;
     line-height: 1.5;
+}
+.entete-btn button{
+    transition: 0.2s ease-out;
+}
+.entete-btn button a{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: var(--font-subtitle);
+    font-weight: var(--font-lig);
+    color: var(--color-dark-grey);
+    padding: 0 16px;
+}
+.entete-btn button:hover,
+.entete-btn button:hover a
+{
+    transform: rotateZ(-90deg);
+    color: var(--color-flash-blue);
+    text-decoration: none;
 }
 
 /* --- FONT SIZE --- */
