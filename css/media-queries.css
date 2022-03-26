@@ -231,6 +231,15 @@
         gap: 20px;
     } */
 
+    /* --- CONVOCATIONS --- */
+
+    .conv-container .table thead tr th{
+        font-size: .9rem;
+    }
+    .conv-container .table tbody tr td{
+        font-size: .8rem;
+    }
+
     /* --- GALERIE --- */
 
     .galerie-photo-container{
@@ -396,6 +405,13 @@
         scroll-snap-align: start;
         height: calc(100% - 10px);
         width: 100%;
+    }
+
+    /* --- CONVOCATIONS --- */
+
+    .conv-container .table thead tr th:last-child,
+    .conv-container .table tbody tr td:last-child{
+        display: none;
     }
 
     /* --- ARTICLES SLIDER --- */
