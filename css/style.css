@@ -1028,6 +1028,49 @@ header{
     font-size: 1.2rem;
 }
 
+/* --- HISTOIRE --- */
+
+.histoire-header{
+    background-image: url(../img/img-test-foot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 165px!important;
+    height: calc(100vh - 165px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.histoire-header > *{
+    flex: 0 0 50%;
+    padding: 0 28px;
+    width: 100%;
+    max-width: 1200px;
+}
+.histoire-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: var(--font-title);
+    text-align: center;
+    max-width: 700px;
+}
+.histoire-container{
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    position: relative;
+}
+.histoire-content{
+    background-color: var(--color-white);
+    padding: 28px 32px;
+}
+.histoire-content h3{
+    margin-bottom: 20px;
+}
+
 /* --- ARTICLES --- */
 
 .article-container{
