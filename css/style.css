@@ -771,6 +771,7 @@ header{
 
 /* --- MAIN RESULTATS --- */
 
+.main-convocation .select-form,
 .main-resultat .select-form{
     flex-direction: column;
 }
@@ -845,6 +846,35 @@ header{
 }
 .res-article-info{
     font-size: 1rem;
+}
+
+/* --- CONVOCATIONS --- */
+
+.conv-container .carousel-selector{
+    border-radius: 4px 4px 0 0;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.conv-container .carousel-selector button svg path{
+    fill: var(--color-white);
+}
+.conv-container{
+    width: 100%;
+}
+.conv-container .table{
+    width: 100%;
+}
+.conv-container .table{
+    border-radius: 0 0 4px 4px;
+}
+.conv-container .table thead tr th{
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-blue);
+}
+.conv-container .table tbody tr td{
+    text-align: left;
+    text-transform: inherit;
+    padding: 11px 20px;
 }
 
 /* --- GALERIE --- */
@@ -922,7 +952,6 @@ header{
     height: calc(100% - 10px);
     width: 100%;
 }
-
 
 /* --- ARTICLES --- */
 
