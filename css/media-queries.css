@@ -259,7 +259,13 @@
         padding: 12px;
         width: 80px;
     }
-
+    .sponsor-container{
+        flex-direction: column;
+    }
+    .sponsor-content > *{
+        padding: 0 15px;
+    }
+    
     /* --- ARTICLES SLIDER --- */
 
     .article-slider{
