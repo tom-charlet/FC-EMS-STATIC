@@ -253,6 +253,13 @@
         grid-auto-columns: 70%;
     }
 
+    /* --- PARTENAIRES --- */
+
+    .partenaire-promo .partenaire-items{
+        padding: 12px;
+        width: 80px;
+    }
+
     /* --- ARTICLES SLIDER --- */
 
     .article-slider{
@@ -391,8 +398,8 @@
 
     .galerie-header .galerie-photo-items:first-child,
     .galerie-photo-items{
-        grid-row: span 6;
-        grid-column: span 6;
+        grid-row: span 3;
+        grid-column: span 3;
     }
     .galerie-video-container{
         gap: 10px;
