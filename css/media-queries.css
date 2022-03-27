@@ -55,7 +55,6 @@
         padding: 60px 28px;
         transition: all 0.2s ease-in-out;
     }
-
     .header-nav > ul{
         position: relative;
         flex-direction: column;
@@ -178,8 +177,30 @@
         position: absolute;
         height: calc(100vh - 350px);
     }
-
     .main-histoire .actu-club-article{
+        grid-column: span 2;
+    }
+
+    /* --- ORGANIGRAMME ---*/
+
+    .president-container{
+        gap: 30px;
+    }
+    .president-img{
+        height: 180px;
+        width: 180px;
+    }
+    .president-content h3{
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+    .perso-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+    .perso-item{
         grid-column: span 2;
     }
 
@@ -463,6 +484,34 @@
     }
     .main-histoire .more-content-btn{
         display: none;
+    }
+
+    /* --- ORGANIGRAMME ---*/
+
+    .president-container{
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .president-img{
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1;
+    }
+    .president-content{
+        gap: 8px;
+    }
+    .president-content h3{
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+    .perso-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+    .perso-item{
+        grid-column: span 2;
     }
 
     /* --- ARTICLES SLIDER --- */
