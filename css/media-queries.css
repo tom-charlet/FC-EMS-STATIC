@@ -161,6 +161,24 @@
         font-size: .8rem;
     }
 
+    /* --- HISTOIRE --- */
+
+    .histoire-header{
+        margin-top: 110px!important;
+    }
+    .histoire-title{
+        flex-basis: 350px;
+    }
+    .histoire-content h3{
+        margin-bottom: 15px;
+    }
+    .histoire-background{
+        z-index: -2;
+        max-width: inherit;
+        position: absolute;
+        height: calc(100vh - 350px);
+    }
+
     /* --- ARTICLES FULL --- */
 
     .article-full-img{
@@ -425,6 +443,12 @@
     .conv-container .table thead tr th:last-child,
     .conv-container .table tbody tr td:last-child{
         display: none;
+    }
+
+    /* --- HISTOIRE --- */
+
+    .histoire-title{
+        width: 100%;
     }
 
     /* --- ARTICLES SLIDER --- */
