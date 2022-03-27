@@ -450,7 +450,9 @@
     .histoire-title{
         width: 100%;
     }
-
+    .histoire-background{
+        height: calc(100vh - 110px);
+    }
     /* --- ARTICLES SLIDER --- */
 
     .article-slider{
