@@ -69,19 +69,21 @@ button::-moz-focus-inner{
     text-align: center;
     text-transform: uppercase;
 }
-.more-content-btn button{
+.more-content-btn button,
+.more-content-btn button:link{
     font-size: .9rem;
     border-radius: 4px;
     text-transform: uppercase;
     font-family: var(--font-subtitle);
     font-weight: var(--font-med);
-    padding: 12px 25px;
+    padding: 12px 40px;
     color: var(--color-flash-blue);
     border: 2px solid var(--color-flash-blue);
     background-color: transparent;
     transition: 0.1s ease-in-out;
 }
-.more-content-btn button:hover{
+.more-content-btn button:hover,
+.more-content-btn button:active{
     color: var(--color-white);
     border: 2px solid transparent;
     background-color: var(--color-flash-blue);
@@ -620,7 +622,7 @@ header{
     grid-template-rows: repeat(2, 260px);
     gap: 20px;
 }
-.main-home .actu-club-article{
+.actu-club-article{
     background-color: var(--color-grey);
     position: relative;
     width: 100%;
@@ -632,19 +634,18 @@ header{
 .main-home .actu-club-article:last-child{
     grid-column: span 2;
 }
-.main-home .actu-club-link{
+.actu-club-link{
     display: block;
     height: 100%;
 }
-
-.main-home .actu-club-items{
+.actu-club-items{
     height: 100%;
     width: 100%;
 }
-.main-home .actu-club-items-img{
+.actu-club-items-img{
     transition: 0.8s ease-out;
 }
-.main-home .actu-club-items::after{
+.actu-club-items::after{
     content: "";
     position: absolute;
     top: 0;
@@ -654,7 +655,7 @@ header{
     background: rgb(36,53,77);
     background: linear-gradient(0deg, rgba(36,53,77,0.80) 0%, rgba(36,53,77,0.25) 35%, rgba(36,53,77,0) 100%);
 }
-.main-home .actu-club-items-title{
+.actu-club-items-title{
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -665,7 +666,7 @@ header{
     color: var(--color-white);
     z-index: 2;
 }
-.main-home .actu-club-items:hover .actu-club-items-img{
+.actu-club-items:hover .actu-club-items-img{
     transform: scale(1.1);
 }
 
@@ -1036,6 +1037,7 @@ header{
     align-items: center;
     margin-top: 165px!important;
     position: relative;
+    overflow: hidden;
 }
 .histoire-header > *{
     width: 100%;
@@ -1076,6 +1078,19 @@ header{
 .histoire-background img{
     opacity: 0.8;
     mix-blend-mode:lighten;
+}
+
+.main-histoire .actu-club-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.main-histoire .actu-club-article{
+    min-width: inherit;
+}
+.main-histoire .actu-club-items-title{
+    font-size: 1.2rem;
+    font-weight: var(--font-med);
 }
 
 /* --- ARTICLES --- */
