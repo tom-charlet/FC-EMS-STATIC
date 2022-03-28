@@ -47,6 +47,13 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.inks{
+    position: absolute;
+    height: 1px;
+    width: 1%;
+    background-color: transparent;
+    transform: translateY(-165px);
+}
 button{
     border: none;
     width: auto;
@@ -1305,6 +1312,24 @@ header{
     scroll-snap-align: start;
     height: calc(100% - 10px);
     width: 100%;
+}
+
+/* --- MENTIONS --- */
+
+.main-mentions
+
+.mention-content p{
+    margin-bottom: 20px;
+}
+.mention-content .entete{
+    margin-top: 60px;
+    padding-left: 0px;
+}
+.mention-content ul{
+    margin-left: 20px;
+}
+.mention-content li{
+    margin-bottom: 10px;
 }
 
 /* --- FOOTER --- */
