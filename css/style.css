@@ -765,6 +765,11 @@ header{
     font-size: .7rem;
 }
 
+.main-home .resultats-container,
+.main-home .galerie-header{
+    margin-bottom: 120px;
+}
+
 /* | --- RESULTATS MATCHS --- */
 
 .resultats-container{
@@ -893,27 +898,42 @@ header{
 .main-galerie .container > *:not(h2){
     margin-bottom: 80px;
 }
-
 .galerie-photo-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-flow: row;
     gap: 20px;
 }
-
 .galerie-photo-items{
     width: 100%;
     aspect-ratio: 1;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
-    cursor: zoom-in;
+    cursor: pointer;
+    background-color: var(--color-blue);
+}
+.galerie-photo-items svg{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--color-white);
+    opacity: 0;
+    width: 25%;
+    height: 25%;
+    transition: ease-in-out 0.2s;
+}
+.galerie-photo-items:hover svg{
+    opacity: 0.9;
 }
 .galerie-photo-items img{
-    transition: 0.8s ease-out;
+    transition: transform 0.8s ease-out, opacity ease-in-out 0.2s;
 }
 .galerie-photo-items:hover img{
     transform: scale(1.1);
+    opacity: 0.8;
 }
 /* .galerie-photo-items:hover .galerie-photo-items::before{
     opacity: 0.9;

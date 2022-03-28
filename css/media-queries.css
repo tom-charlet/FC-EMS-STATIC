@@ -396,7 +396,7 @@
     .actu-club-container > *{
         scroll-snap-align: start;
     }
-    .actu-foot-article-container{
+    .main-home .actu-foot-article-container{
         grid-template-columns: 1fr;
     }
     .actu-club-items-title{
@@ -446,7 +446,12 @@
 
     /* --- GALERIE --- */
 
-    .galerie-header .galerie-photo-items:first-child,
+   
+    .galerie-header .galerie-photo-items:first-child{
+        grid-row: span 6;
+        grid-column: span 6;
+    }
+
     .galerie-photo-items{
         grid-row: span 3;
         grid-column: span 3;
