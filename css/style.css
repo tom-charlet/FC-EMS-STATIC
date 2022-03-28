@@ -612,7 +612,7 @@ header{
     box-shadow: inset rgba(33, 35, 38, 0.1) 0px 10px 10px -10px, rgba(0, 0, 0, 0.1) 0px 6px 8px -2px;
     background-color: var(--color-grey);
 }
-.dropdown-menu:hover ul{
+.dropdown-menu ul.is-active{
     background-color: var(--color-light-grey);
     display: block;
     position: absolute;
