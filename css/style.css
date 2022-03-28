@@ -90,6 +90,54 @@ button::-moz-focus-inner{
     box-shadow: rgba(0, 0, 0, 0.1) inset 0px 2px 15px -3px, rgba(0, 0, 0, 0.05) 0px 0px 6px 2px;
 }
 
+.popup-image{
+    position: fixed;
+    z-index: 200;
+    top: 165px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 165px);
+    background-color:#00101dbb;
+    display: none;
+}
+.popup-image-close{
+    padding: 20px;
+    cursor: pointer;
+}
+.popup-image-close span{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+    width: 30px;
+    height: 3px;
+}
+.popup-image-close span::before,
+.popup-image-close span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    border-radius: 2px;
+}
+.popup-image-close span::before{
+    transform: rotate(45deg);
+}
+.popup-image-close span::after{
+    transform: rotate(-45deg);
+}
+.popup-image-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 100px);
+    height: calc(100% - 200px);
+}
+
 main > *:first-child{
     margin-top: 230px;
     min-height: calc(100vh - 220px);
@@ -926,6 +974,7 @@ header{
     transition: ease-in-out 0.2s;
 }
 .galerie-photo-items:hover svg{
+    pointer-events: none;
     opacity: 0.9;
 }
 .galerie-photo-items img{
@@ -1000,6 +1049,7 @@ header{
     width: 70px;
     height: 70px;
     fill: var(--color-white);
+    pointer-events: none;
     opacity: .6;
     transition: ease-in-out 0.2s;
 }
@@ -1007,7 +1057,6 @@ header{
     opacity: .9;
     transform: scale(1.05);
 }
-
 /* --- PARTENAIRES --- */
 
 .partenaire-promo{

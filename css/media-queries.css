@@ -96,6 +96,16 @@
 
     /* --- BASE PROPERTY --- */
 
+    .popup-image{
+        top: 110px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 110px);
+        background-color:#00101dbb;
+    }
+    .popup-image-container{
+        height: calc(100% - 120px);
+    }
     main > *:first-child:not(.main-banner){
         margin-top: 160px;
     }
