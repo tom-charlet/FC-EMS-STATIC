@@ -836,7 +836,8 @@ header{
 /* --- MAIN RESULTATS --- */
 
 .main-convocation .select-form,
-.main-resultat .select-form{
+.main-resultat .select-form,
+.main-galerie .select-form{
     flex-direction: column;
 }
 .main-resultat .filter-sidebar{
@@ -952,6 +953,15 @@ header{
     grid-auto-flow: row;
     gap: 20px;
 }
+.galerie-joueurs{
+    width: 100%;
+}
+.galerie-joueurs .galerie-photo-items{
+    aspect-ratio: 16/10;
+    width: 100%;
+    height: 100%;
+    grid-column: -1 / 1;
+}
 .galerie-photo-items{
     width: 100%;
     aspect-ratio: 1;
@@ -984,27 +994,10 @@ header{
     transform: scale(1.1);
     opacity: 0.8;
 }
-/* .galerie-photo-items:hover .galerie-photo-items::before{
-    opacity: 0.9;
-}
-.galerie-photo-items::before{
-    opacity: 0;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    text-align: center;
-} */
-
 .galerie-header .galerie-photo-items:first-child{
     grid-row: span 2;
     grid-column: span 2;
 }
-
 .galerie-video-container{
     display: grid;
     gap: 20px;
@@ -1057,6 +1050,7 @@ header{
     opacity: .9;
     transform: scale(1.05);
 }
+
 /* --- PARTENAIRES --- */
 
 .partenaire-promo{

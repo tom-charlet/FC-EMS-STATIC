@@ -243,22 +243,26 @@
         flex-direction: column;
     }
     .main-convocation .select-form,
-    .main-resultat .select-form{
+    .main-resultat .select-form,
+    .main-galerie .select-form{
         flex-direction: row;
     }
 
     /* --- RESULTAT --- */
 
     .main-convocation .filtre-wrap,
-    .main-resultat .filtre-wrap{
+    .main-resultat .filtre-wrap,
+    .main-galerie .filtre-wrap{
         gap: 40px;
     }
     .main-convocation .filter-sidebar,
-    .main-resultat .filter-sidebar{
+    .main-resultat .filter-sidebar,
+    .main-galerie .filtre-sidebar{
         width: 100%;
     }
     .main-convocation .filter-sidebar .entete,
-    .main-resultat .filter-sidebar .entete{
+    .main-resultat .filter-sidebar .entete,
+    .main-galerie .filter-sidebar .entete{
         display: none;
     }
     
